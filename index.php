@@ -115,4 +115,23 @@
             var_dump($array); 
         } 
     }
+    
+    $array_one = [1,2];
+    array_add(5, $array_one);
+
+    function array_add($variable, $array){
+        $length = 0;
+        $f=0;
+
+        while ($array[$f]) {
+            $length++;
+            $f++;
+        }
+
+        if (!$array[$length]) {
+            $array[$length] = $variable;
+        }
+    }
+
+
 ?>  
