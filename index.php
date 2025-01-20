@@ -136,7 +136,6 @@ $thread3->join();
 echo "All threads are completed." . PHP_EOL;
 
 
-// Dosyaya yazma işlevi
 function write_to_file($filename, $content)
 {
     if (file_put_contents($filename, $content) === false) {
